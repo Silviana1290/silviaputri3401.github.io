@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <em>Mode Gelap</em>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">My<span>Portofolio</span></div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-text">Selamat Datang di Portofolio Saya</h1>
+                <h2>Saya seorang <span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+                <p>Meningkatkan diri dalam membangun solusi kreatif dan inovatif untuk berbagai kebutuhan</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img">
+                    <img src="/image/image3.jpg" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about light-theme">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            
+            <div class="about-container">
+                <div class="about-section">
+                    <div class="section-header">
+                        <i class="fas fa-rocket section-icon"></i>
+                        <h3>Pengenalan</h3>
+                    </div>
+                    <p class="about-text">
+                        Nama saya adalah Rofi Barbie Silviana Putri. Saya adalah seorang mahasiswi yang sedang berkuliah di Universitas 17 Agustus 1945 Surabaya, tepatnya di jurusan Teknik Informatika. Saat ini, saya sudah berada di semester 4. Saya memiliki minat yang besar dalam dunia pemrograman, terutama di bidang pengembangan web dan pengelolaan data. Saya tertarik mempelajari SQL di mata kuliah Sistem Basis Data dan juga menggunakan phpMyAdmin dalam mata kuliah Pemrograman Web. Saya terus berusaha untuk mengembangkan kemampuan saya agar bisa berkontribusi di dunia teknologi informasi di masa depan.
+                    </p>
+                </div>
+            </div>
+             
+            <div class="about-container-2">
+                <div class="about-section">
+                    <div class="section-header">
+                        <i class="fas fa-chart-bar section-icon"></i>
+                        <h3>Pengalaman</h3>
+                    </div>
+                    <p class="about-text">
+                        Saya memiliki pengalaman dalam mengembangkan beberapa aplikasi di bidang Web dan pengolahan data. Salah satu program yang pernah saya buat memiliki fitur pengelolaan data serta beberapa fitur bermanfaat lainnya. Setelah saya mulai kuliah dengan mengambil jurusan Teknik Informatika, saat itulah ketertarikan saya terhadap dunia IT berkembang. Sejak itu, saya terus belajar dan mengasah keterampilan dalam pengembangan aplikasi, khususnya di bidang web dan manajemen data.
+                    </p>
+                </div>
+                <div class="about-section">
+                    <div class="section-header">
+                        <i class="fas fa-heart section-icon"></i>
+                        <h3>Hobi</h3>
+                    </div>
+                    <div class="hobby-tags">
+                        <span class="hobby-tag">Coding</span>
+                        <span class="hobby-tag">Playing Computer</span>
+                        <span class="hobby-tag">Create Project</span>
+                        <span class="hobby-tag">Mebaca</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills light-theme">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Expertise</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-slider-container">
+                <div class="skills-slider">
+                    <!-- Row 1 -->
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                        </div>
+                        <div class="expertise-name">HTML</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                        </div>
+                        <div class="expertise-name">CSS</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        </div>
+                        <div class="expertise-name">JavaScript</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        </div>
+                        <div class="expertise-name">TypeScript</div>
+                    </div>
+                    
+                    <!-- Row 2 -->
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                        </div>
+                        <div class="expertise-name">C++</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                        </div>
+                        <div class="expertise-name">C</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+                        </div>
+                        <div class="expertise-name">SQL</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                        </div>
+                        <div class="expertise-name">PHP</div>
+                    </div>
+                    
+                    <!-- Row 3 -->
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                        </div>
+                        <div class="expertise-name">GitHub</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R">
+                        </div>
+                        <div class="expertise-name">R</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        </div>
+                        <div class="expertise-name">Python</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node JS">
+                        </div>
+                        <div class="expertise-name">Node JS</div>
+                    </div>
+                    
+                    <!-- Row 4 -->
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                        </div>
+                        <div class="expertise-name">Git</div>
+                    </div>
+                    
+                    <!-- Duplicate items for continuous scrolling -->
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                        </div>
+                        <div class="expertise-name">HTML</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                        </div>
+                        <div class="expertise-name">CSS</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        </div>
+                        <div class="expertise-name">JavaScript</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        </div>
+                        <div class="expertise-name">TypeScript</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Proyek Terbaru</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-item" data-category="web">
+                    <div class="project-img">
+                        <img src="/image/image4.jpg" alt="ticket Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Pemesanan Tiket Website</h3>
+                        <p>Website Pemesanan Tiket</p>
+                        <p>Website ini project evaluasi akhir semester dari mata kuliah pemrograman web. 
+                            Website ini menggunakan XAMPP dan phpMyAdmin</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-category="web">
+                    <div class="project-img">
+                        <img src="/image/image5.jpg" alt="ehealth Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Pendaftaran Online</h3>
+                        <p>Website Pendaftaran Online dengan animasi dan interaksi yang menarik. Website ini project saya dari mata kuliah Interaksi Manusia dan Komputer</p>
+                        <div class="project-links">
+                            <a href="https://coca35t0zd5tjehxq.lite.vusercontent.net/" class="btn-small"><i class="fas fa-eye"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hubungi Saya</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Lokasi</h3>
+                            <p>Surabaya, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>Silviaputriana98@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/rofi-barbie-silviana-putri-40ab71332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Silviana1290" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/rofibarbie/" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subjek" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Pesan Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        <form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year"></span> Mini Portofolio. Hak Cipta Dilindungi.</p>
+                <div class="footer-links">
+                    <a href="#home">Beranda</a>
+                    <a href="#about">Tentang</a>
+                    <a href="#skills">Keahlian</a>
+                    <a href="#projects">Proyek</a>
+                    <a href="#contact">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <div class="custom-cursor"></div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type='text/javascript' src='https://cdn.prinsh.com/NathanPrinsley-effect/efek-salju.js'></script>
+    <script>
+        const form = document.getElementById("contactForm");
+    
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+    
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+    
+            if (name && email && subject && message) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Pesan Terkirim',
+                    text: 'Terima kasih telah menghubungi kami.',
+                    confirmButtonText: 'OK',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    showConfirmButton: true,
+                    timerProgressBar: false
+                }).then(() => {
+                    form.reset();
+                    window.location.href = "/";
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Gagal Mengirim Pesan',
+                    text: 'Harap isi semua kolom sebelum mengirim.',
+                    confirmButtonText: 'OK',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    showConfirmButton: true,
+                    timerProgressBar: false
+                });
+            }
+        });
+    </script>      
+    <script src="script.js"></script>   
+</body>
+</html>
